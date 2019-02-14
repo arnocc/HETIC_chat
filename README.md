@@ -1,5 +1,5 @@
 # HETIC_chat
- Mise en place d'une applicatio nde chat (chatbot)
+ Mise en place d'une application de chat (chatbot)
 
  - Initialiser le dossier serveur
  - Créer un fichier pour le serveur
