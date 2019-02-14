@@ -1,15 +1,15 @@
 // Imports
+    require('dotenv').config();
+    const express = require('express');
+    const path = require('path');
+    const bodyParser = require('body-parser');
+    const ejs = require('ejs');
+
 
 // Configuration du serveur
-let express = require('express');
-let path = require ('path');
-let bodyParser = require('body-parser');
 
-let front = require('./routes/front');
-let api = require('./routes/api');
-
-let port = 8080;
-let app = express();
+    const serv = express();
+    const port = process.env.PORT
 
 // Dossier statique de la partie front
 
@@ -19,6 +19,6 @@ let app = express();
 
 
 // Démarrer le serveur
-app.listen(port, () => {
-    console.log('Server started on port ' + port);
-});
+    server.listen(port, () => {
+        console.log('Server is active on port ${port}');
+    });
